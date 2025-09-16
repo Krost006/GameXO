@@ -1,0 +1,7 @@
+set(CMAKE_CXX_STANDARD 20)
+project(net)
+set(SOURCES Net.cpp)
+set(HEADERS Net.h)
+add_library(net ${SOURCES} ${HEADERS})
+#target_link_libraries(GameXO PUBLIC game)
+target_include_directories(GameXO PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
